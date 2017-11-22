@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  hogehoge
 //
-//  Created by kazuya on 2017/11/23.
+//  Created by hoge on 2017/11/23.
 //  Copyright © 2017年 hoge. All rights reserved.
 //
 
