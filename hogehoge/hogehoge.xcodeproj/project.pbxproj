@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E55E5D6D22845EF600DBC276 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55E5D6B22845EF600DBC276 /* TableViewCell.swift */; };
+		E55E5D6E22845EF600DBC276 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E55E5D6C22845EF600DBC276 /* TableViewCell.xib */; };
 		E58C5ABA1FC5CF84000ABB1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58C5AB91FC5CF84000ABB1D /* AppDelegate.swift */; };
 		E58C5ABC1FC5CF84000ABB1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58C5ABB1FC5CF84000ABB1D /* ViewController.swift */; };
 		E58C5ABF1FC5CF84000ABB1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E58C5ABD1FC5CF84000ABB1D /* Main.storyboard */; };
 		E58C5AC11FC5CF84000ABB1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E58C5AC01FC5CF84000ABB1D /* Assets.xcassets */; };
 		E58C5AC41FC5CF84000ABB1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E58C5AC21FC5CF84000ABB1D /* LaunchScreen.storyboard */; };
+		E5E0E24E227E07A400B211EB /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E0E24C227E07A400B211EB /* RxSwift.framework */; };
+		E5E0E24F227E07A400B211EB /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E0E24D227E07A400B211EB /* RxCocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E55E5D6B22845EF600DBC276 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		E55E5D6C22845EF600DBC276 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		E58C5AB61FC5CF84000ABB1D /* hogehoge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hogehoge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E58C5AB91FC5CF84000ABB1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E58C5ABB1FC5CF84000ABB1D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,8 @@
 		E58C5AC01FC5CF84000ABB1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E58C5AC31FC5CF84000ABB1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E58C5AC51FC5CF84000ABB1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5E0E24C227E07A400B211EB /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		E5E0E24D227E07A400B211EB /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5E0E24E227E07A400B211EB /* RxSwift.framework in Frameworks */,
+				E5E0E24F227E07A400B211EB /* RxCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +50,7 @@
 			children = (
 				E58C5AB81FC5CF84000ABB1D /* hogehoge */,
 				E58C5AB71FC5CF84000ABB1D /* Products */,
+				E5E0E24B227E07A300B211EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +67,23 @@
 			children = (
 				E58C5AB91FC5CF84000ABB1D /* AppDelegate.swift */,
 				E58C5ABB1FC5CF84000ABB1D /* ViewController.swift */,
+				E55E5D6B22845EF600DBC276 /* TableViewCell.swift */,
+				E55E5D6C22845EF600DBC276 /* TableViewCell.xib */,
 				E58C5ABD1FC5CF84000ABB1D /* Main.storyboard */,
 				E58C5AC01FC5CF84000ABB1D /* Assets.xcassets */,
 				E58C5AC21FC5CF84000ABB1D /* LaunchScreen.storyboard */,
 				E58C5AC51FC5CF84000ABB1D /* Info.plist */,
 			);
 			path = hogehoge;
+			sourceTree = "<group>";
+		};
+		E5E0E24B227E07A300B211EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5E0E24D227E07A400B211EB /* RxCocoa.framework */,
+				E5E0E24C227E07A400B211EB /* RxSwift.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +96,7 @@
 				E58C5AB21FC5CF84000ABB1D /* Sources */,
 				E58C5AB31FC5CF84000ABB1D /* Frameworks */,
 				E58C5AB41FC5CF84000ABB1D /* Resources */,
+				E5E0E250227E07BB00B211EB /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -124,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E58C5AC41FC5CF84000ABB1D /* LaunchScreen.storyboard in Resources */,
+				E55E5D6E22845EF600DBC276 /* TableViewCell.xib in Resources */,
 				E58C5AC11FC5CF84000ABB1D /* Assets.xcassets in Resources */,
 				E58C5ABF1FC5CF84000ABB1D /* Main.storyboard in Resources */,
 			);
@@ -131,11 +155,34 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E5E0E250227E07BB00B211EB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E58C5AB21FC5CF84000ABB1D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E55E5D6D22845EF600DBC276 /* TableViewCell.swift in Sources */,
 				E58C5ABC1FC5CF84000ABB1D /* ViewController.swift in Sources */,
 				E58C5ABA1FC5CF84000ABB1D /* AppDelegate.swift in Sources */,
 			);
@@ -275,6 +322,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = hogehoge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hoge.hogehoge;
@@ -289,6 +340,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = hogehoge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hoge.hogehoge;
